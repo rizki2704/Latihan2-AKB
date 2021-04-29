@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="logo" type="id" />
+    <item name="username" type="id" />
+    <item name="password" type="id" />
+    <item name="btn_login" type="id" />
+    <item name="or" type="id" />
+    <item name="btn_connect" type="id" />
+    <item name="have" type="id" />
+    <item name="register" type="id" />
+    <item name="verify" type="id" />
+    <item name="btn_send" type="id" />
+</resources>

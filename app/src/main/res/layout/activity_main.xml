@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:paddingLeft="30dp"
+    android:paddingTop="75dp"
+    android:paddingRight="30dp"
+    android:paddingBottom="50dp"
+    tools:context=".MainActivity">
+    // 29 April 2021 Login Page 10118025 Rizki Restu Illahi IF1
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_welcome_logo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:hint="username"
+        android:outlineAmbientShadowColor="@color/separator"
+        android:outlineSpotShadowColor="@color/white"
+        android:paddingBottom="30dp"
+        android:shadowColor="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:backgroundTint="@color/white"
+        android:hint="password"
+        android:outlineAmbientShadowColor="@color/separator"
+        android:outlineSpotShadowColor="@color/white"
+        android:paddingBottom="30dp"
+        android:shadowColor="@color/white"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password"
+        android:backgroundTint="@color/bg"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="login"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="or"
+        android:textColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/or"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/bg"
+        android:drawableLeft="@drawable/ic_welcome_fb_login"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="connect_with_facebook"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp" />
+
+
+    <TextView
+        android:id="@+id/have"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_connect"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:text="doesnt have account ? "
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_connect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/have"
+        android:text="Register"
+        android:onClick="pindah"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

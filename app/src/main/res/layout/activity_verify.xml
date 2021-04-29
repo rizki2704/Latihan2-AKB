@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="200dp"
+    android:paddingRight="30dp"
+    tools:context=".VerifyActivity">
+    // 29 April 2021 Verify Account Page 10118025 Rizki Restu Illahi IF1
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify your Account"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"></TextView>
+
+    <TextView
+        android:id="@+id/decripte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="We have send verification code to your email"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decripte"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:hint="enter verification code here..."
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verify"
+        android:layout_marginTop="20dp"
+        android:text="send"
+        android:textColor="@color/white"
+        app:strokeColor="@color/white"
+        android:backgroundTint="@color/bg"
+        app:strokeWidth="2dp"/>
+
+    <TextView
+        android:id="@+id/have"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_send"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp"
+        android:text="doesn't get the code ?"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/have"
+        android:text="Resend"
+
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>

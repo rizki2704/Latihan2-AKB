@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    // 29 April 2021 Register Page 10118025 Rizki Restu Illahi IF1
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="@drawable/ic_header"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_arrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/ic_header_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/ic_arrow"
+                android:text="Profil"
+                android:textColor="@color/white"
+                android:textSize="20sp"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/regis_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:hint="Username"
+                android:paddingBottom="20dp" />
+
+            <EditText
+                android:id="@+id/regis_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/regis_username"
+                android:hint="Password"
+                android:paddingBottom="20dp" />
+
+            <EditText
+                android:id="@+id/regis_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_email"
+                android:hint="Phone Number"
+                android:paddingBottom="20dp" />
+
+            <RadioGroup
+                android:id="@+id/regis_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_phone"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="110dp"
+                    android:checked="true"
+                    android:hint="Male" />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Female" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/regis_spinner"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_gender" />
+
+            <TextView
+                android:id="@+id/spinner_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_spinner"
+                android:textColor="@color/white" />
+
+            <Spinner
+                android:id="@+id/regis_spinner2"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_gender"
+                android:layout_toRightOf="@id/regis_spinner" />
+
+            <TextView
+                android:id="@+id/spinner_textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_spinner"
+                android:layout_toRightOf="@id/spinner_textView"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/regis_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_spinner"
+                android:hint="Password"
+                android:paddingBottom="20dp" />
+
+            <EditText
+                android:id="@+id/regis_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_password"
+                android:hint="Retype Password"
+                android:paddingBottom="20dp" />
+
+            <RadioGroup
+                android:id="@+id/regis_organisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_repassword"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <RadioButton
+                    android:id="@+id/rb_personal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="85dp"
+                    android:checked="true"
+                    android:hint="Personal" />
+
+                <RadioButton
+                    android:id="@+id/organisasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Organisasi" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/regis_spinner3"
+                android:layout_below="@id/regis_organisasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/spinner_textView3"
+                android:layout_below="@id/regis_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/regis_homeadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_spinner3"
+                android:hint="Home Address"
+                android:paddingBottom="20dp" />
+
+            <EditText
+                android:id="@+id/regis_lokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_homeadd"
+                android:hint="Default Location"
+                android:paddingBottom="20dp" />
+
+            <CheckBox
+                android:id="@+id/cc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_lokasi"></CheckBox>
+
+            <TextView
+                android:id="@+id/txt_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/regis_lokasi"
+                android:layout_toRightOf="@id/cc"
+                android:text="Aggree With Terms and Conditions"
+                android:layout_marginTop="5dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/txt_agree"
+                android:layout_marginTop="20dp"
+                android:text="REGISTER"
+                android:textColor="@color/bg"
+                app:strokeColor="@color/bg"
+                android:backgroundTint="@color/white"
+                app:strokeWidth="2dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
