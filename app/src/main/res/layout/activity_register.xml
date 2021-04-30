@@ -70,7 +70,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/regis_username"
-                    android:hint="Password"
+                    android:hint="Email"
                     android:paddingBottom="20dp" />
 
                 <EditText
@@ -79,6 +79,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/regis_email"
                     android:hint="Phone Number"
+                    android:inputType="number"
                     android:paddingBottom="20dp" />
 
                 <RadioGroup
@@ -140,6 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/regis_spinner"
                     android:hint="Password"
+                    android:inputType="textPassword"
                     android:paddingBottom="20dp" />
 
                 <EditText
@@ -148,6 +150,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/regis_password"
                     android:hint="Retype Password"
+                    android:inputType="textPassword"
                     android:paddingBottom="20dp" />
 
                 <RadioGroup

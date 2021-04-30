@@ -41,6 +41,7 @@
         android:layout_below="@+id/username"
         android:backgroundTint="@color/white"
         android:hint="password"
+        android:inputType="textPassword"
         android:outlineAmbientShadowColor="@color/separator"
         android:outlineSpotShadowColor="@color/white"
         android:paddingBottom="30dp"
@@ -53,8 +54,8 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/password"
-        android:backgroundTint="@color/bg"
         android:layout_marginTop="20dp"
+        android:backgroundTint="@color/bg"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
         android:text="LOGIN"
@@ -104,9 +105,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:layout_toRightOf="@+id/have"
-        android:text="Register"
         android:onClick="pindah"
+        android:text="Register"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
 </RelativeLayout>
