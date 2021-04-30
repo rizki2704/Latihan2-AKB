@@ -41,7 +41,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="75dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/ic_profile_default_large"
+                        android:src="@drawable/hehe"
                         app:civ_circle_background_color="@color/white"
                         app:civ_border_width="2dp"
                         app:civ_border_color="@color/white"/>
