@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+// 30 April 2021 Pindah halaman ke register 10118025 Rizki Restu Illahi IF1
 public class MainActivity extends AppCompatActivity {
 
     @Override

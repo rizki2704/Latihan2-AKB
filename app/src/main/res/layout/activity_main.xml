@@ -54,9 +54,10 @@
         android:layout_height="60dp"
         android:layout_below="@+id/password"
         android:backgroundTint="@color/bg"
+        android:layout_marginTop="20dp"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:text="login"
+        android:text="LOGIN"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 
@@ -66,8 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btn_login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="or"
+        android:layout_marginTop="10dp"
+        android:text="OR"
         android:textColor="@color/white" />
 
     <com.google.android.material.button.MaterialButton
@@ -75,12 +76,12 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/or"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/bg"
         android:drawableLeft="@drawable/ic_welcome_fb_login"
         android:paddingLeft="50dp"
         android:paddingRight="50dp"
-        android:text="connect_with_facebook"
+        android:text="CONNECT WITH FACEBOOK"
         app:strokeColor="@color/white"
         app:strokeWidth="2dp" />
 

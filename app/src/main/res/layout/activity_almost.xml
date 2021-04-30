@@ -40,6 +40,7 @@
         android:layout_below="@+id/decripte"
         android:layout_marginTop="80dp"
         android:text="VERIFY"
+        android:onClick="moveVerify"
         android:textColor="@color/white"
         app:strokeColor="@color/white"
         android:backgroundTint="@color/bg"
